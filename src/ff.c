@@ -4097,7 +4097,7 @@ FRESULT f_mkfs (
 		md = 0xF8;
 	} else {
 		if (sfd) {	/* No partition table (SFD) */
-			md = 0xF0;
+			md = 0xF8; // was 0xF0
 		} else {	/* Create partition table (FDISK) */
 			mem_set(fs->win, 0, SS(fs));
 			tbl = fs->win+MBR_Table;	/* Create partition table for single partition in the drive */

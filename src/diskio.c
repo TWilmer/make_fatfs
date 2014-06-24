@@ -15,8 +15,8 @@
 
 /* Definitions of physical drive number for each media */
 #define ATA		0
-const int SECTOR_SIZE=4096;
-const int SECTOR_COUNT=16483;
+const int SECTOR_SIZE=512;
+const int SECTOR_COUNT=16483*2;
 
 static int sImageFileHandle=0;
 char *sImageFile;

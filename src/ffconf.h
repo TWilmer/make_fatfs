@@ -45,7 +45,7 @@
 /* To enable fast seek feature, set _USE_FASTSEEK to 1. */
 
 
-#define _USE_LABEL		0	/* 0:Disable or 1:Enable */
+#define _USE_LABEL		1	/* 0:Disable or 1:Enable */
 /* To enable volume label functions, set _USE_LAVEL to 1 */
 
 
@@ -57,7 +57,7 @@
 / Locale and Namespace Configurations
 /---------------------------------------------------------------------------*/
 
-#define _CODE_PAGE	858
+#define _CODE_PAGE	850
 /* The _CODE_PAGE specifies the OEM code page to be used on the target system.
 /  Incorrect setting of the code page can cause a file open failure.
 /
@@ -89,7 +89,7 @@
 /   1    - ASCII (Valid for only non-LFN configuration) */
 
 
-#define	_USE_LFN	0		/* 0 to 3 */
+#define	_USE_LFN	2		/* 0 to 3 */
 #define	_MAX_LFN	255		/* Maximum LFN length to handle (12 to 255) */
 /* The _USE_LFN option switches the LFN feature.
 /

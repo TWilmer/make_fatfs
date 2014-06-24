@@ -17,7 +17,8 @@ int main(int argc, char **argv)
 
   int size=512*128;
   f_mount(&fat,"",1);
-  FRESULT res=f_mkfs("0",1 , 0);
+  FRESULT res=f_mkfs("0",1 , 2048);
+  f_setlabel ("BOOT");
   printf("#Create dosfs of %d byes rsult %d\n", size, res);
   int i=0;
   for(i=2;i<argc; i++)
